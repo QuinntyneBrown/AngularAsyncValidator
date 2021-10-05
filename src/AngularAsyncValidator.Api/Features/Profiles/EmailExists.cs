@@ -8,7 +8,8 @@ namespace AngularAsyncValidator.Api.Features
 {
     public class EmailExists
     {
-        public class Request : IRequest<Response> {
+        public class Request : IRequest<Response>
+        {
             public string Email { get; set; }
         }
 
@@ -21,15 +22,15 @@ namespace AngularAsyncValidator.Api.Features
         {
             private readonly IAngularAsyncValidatorDbContext _context;
 
-            public Handler(IAngularAsyncValidatorDbContext context){
+            public Handler(IAngularAsyncValidatorDbContext context)
+            {
                 _context = context;
             }
 
-            public async Task<Response> Handle(Request request, CancellationToken cancellationToken) {
-
-                var exists = await _context.Profiles.SingleOrDefaultAsync(x => x.Email == request.Email);
-
-                return new () { 
+            public async Task<Response> Handle(Request request, CancellationToken cancellationToken)
+            {
+                return new()
+                {
                     Exists = (await _context.Profiles.SingleOrDefaultAsync(x => x.Email == request.Email)) != null
                 };
             }

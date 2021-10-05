@@ -9,6 +9,6 @@ namespace AngularAsyncValidator.Api.Interfaces
     {
         DbSet<Profile> Profiles { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
-        
+
     }
 }

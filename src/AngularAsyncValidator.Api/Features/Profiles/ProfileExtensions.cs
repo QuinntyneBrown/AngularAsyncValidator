@@ -7,12 +7,12 @@ namespace AngularAsyncValidator.Api.Features
     {
         public static ProfileDto ToDto(this Profile profile)
         {
-            return new ()
+            return new()
             {
                 ProfileId = profile.ProfileId,
                 Email = profile.Email
             };
         }
-        
+
     }
 }
