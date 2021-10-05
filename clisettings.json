@@ -1,0 +1,16 @@
+{
+  "domainNamespace": "AngularAsyncValidator.Api",
+  "applicationNamespace": "AngularAsyncValidator.Api",
+  "infrastructureNamespace": "AngularAsyncValidator.Api",
+  "apiNamespace": "AngularAsyncValidator.Api",
+  "domainDirectory": "C:\\Projects\\AngularAsyncValidator\\src\\AngularAsyncValidator.Api",
+  "applicationDirectory": "C:\\Projects\\AngularAsyncValidator\\src\\AngularAsyncValidator.Api",
+  "infrastructureDirectory": "C:\\Projects\\AngularAsyncValidator\\src\\AngularAsyncValidator.Api",
+  "apiDirectory": "C:\\Projects\\AngularAsyncValidator\\src\\AngularAsyncValidator.Api",
+  "path": "C:\\Projects\\AngularAsyncValidator",
+  "dbContext": "AngularAsyncValidatorDbContext",
+  "sourceFolder": "src",
+  "resources": [
+    "Profile"
+  ]
+}
