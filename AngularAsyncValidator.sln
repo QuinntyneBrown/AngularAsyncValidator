@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1C98D60F-FC8E-4C7F-A460-4D91DCC198F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAsyncValidator.Api", "src\AngularAsyncValidator.Api\AngularAsyncValidator.Api.csproj", "{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAsyncValidator.Api", "src\AngularAsyncValidator.Api\AngularAsyncValidator.Api.csproj", "{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE780B05-589D-454F-BB4C-CA319997AA48}"
+	ProjectSection(SolutionItems) = preProject
+		clisettings.json = clisettings.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,7 +35,13 @@ Global
 		{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55}.Release|x86.ActiveCfg = Release|Any CPU
 		{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D6CA4D6E-0278-4D6E-B6A7-1D74E0F50E55} = {1C98D60F-FC8E-4C7F-A460-4D91DCC198F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {594C60F5-E01A-4A7E-8FD2-D338D949D001}
 	EndGlobalSection
 EndGlobal

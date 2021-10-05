@@ -1,0 +1,9 @@
+<div>
+  {{ emailControl.value }}
+</div>
+
+<div>
+  {{ emailControl.errors | json }}
+</div>
+
+<input [formControl]="emailControl" type="email">

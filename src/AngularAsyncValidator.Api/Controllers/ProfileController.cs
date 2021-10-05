@@ -38,7 +38,14 @@ namespace AngularAsyncValidator.Api.Controllers
         [ProducesResponseType(typeof(GetProfiles.Response), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<GetProfiles.Response>> Get()
             => await _mediator.Send(new GetProfiles.Request());
-        
+
+        [HttpGet("email-exists/{email}", Name = "EmailExistsRoute")]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        [ProducesResponseType(typeof(ProblemDetails), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(EmailExists.Response), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<EmailExists.Response>> EmailExists([FromRoute] EmailExists.Request request)
+            => await _mediator.Send(request);
+
         [HttpPost(Name = "CreateProfileRoute")]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [ProducesResponseType(typeof(ProblemDetails), (int)HttpStatusCode.BadRequest)]

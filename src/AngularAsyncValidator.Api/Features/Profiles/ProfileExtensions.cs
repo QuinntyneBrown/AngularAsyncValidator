@@ -9,7 +9,8 @@ namespace AngularAsyncValidator.Api.Features
         {
             return new ()
             {
-                ProfileId = profile.ProfileId
+                ProfileId = profile.ProfileId,
+                Email = profile.Email
             };
         }
         
