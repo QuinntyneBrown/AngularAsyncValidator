@@ -1,9 +1,9 @@
-<div>
-  {{ emailControl.value }}
-</div>
+<input name="email" style="display:none" />
 
-<div>
-  {{ emailControl.errors | json }}
-</div>
-
-<input [formControl]="emailControl" type="email">
+<form>
+  <label for="email">Email:</label>
+  <input [formControl]="emailControl" type="text" name="email" autocomplete="no">
+  <span *ngIf="emailControl.dirty && emailControl.errors?.required">Email required</span>
+  <span *ngIf="emailControl.dirty && emailControl.errors?.email">Invalid email format</span>
+  <span *ngIf="emailControl.dirty && emailControl.errors?.existingEmail">Email exists</span>
+</form>

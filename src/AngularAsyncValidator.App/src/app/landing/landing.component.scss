@@ -1,0 +1,22 @@
+:host {
+  label,
+  input,
+  span {
+    display: block;
+  }
+
+  span {
+    color: red;
+  }
+
+  label,
+  input,
+  span {
+    min-width: 200px;
+    line-height: 24px;
+  }
+
+  input {
+    padding: 0 10px;
+  }
+}

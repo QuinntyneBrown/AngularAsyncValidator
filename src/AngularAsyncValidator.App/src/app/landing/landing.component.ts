@@ -9,7 +9,9 @@ import { EmailExistsValidator } from './email-exists-validator';
 })
 export class LandingComponent {
 
-  public emailControl = new FormControl(null, [Validators.required,Validators.email], [this._emailExistsValidator.existingEmailValidator()]);
+  public emailControl = new FormControl(null,
+    [Validators.required,Validators.email],
+    [this._emailExistsValidator.existingEmailValidator()]);
 
   constructor(
     private readonly _emailExistsValidator: EmailExistsValidator
